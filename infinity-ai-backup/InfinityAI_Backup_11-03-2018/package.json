@@ -12,7 +12,7 @@
   "dependencies": {
     "chalk": "^2.3.1",
     "chart.js": "^2.7.1",
-    "electron": "^1.8.2",
+    "electron": "^1.8.8",
     "fs": "0.0.1-security",
     "node-stopwatch": "0.0.1",
     "right-align": "^0.1.3",
