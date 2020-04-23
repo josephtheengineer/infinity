@@ -1,0 +1,214 @@
+
+    <div class="demo-card-square mdl-card mdl-shadow--2dp" style="background-color: #BBDEFB">
+      <div class="mdl-card__supporting-text">
+
+        <table class="noborder">
+          <tr>
+            <td> <p><button onclick="refreshScreen()">Refresh</button></p>                    </td>
+            <td> <p><button onclick="rmain()">Start</button></p>                              </td>
+            <td> <p><button onclick="stop()">Stop</button></p>                                </td>
+            <td> <p><button onclick="saveNetwork()">Save</button></p>                         </td>
+            <td> <p><button onclick="reset()">Reset</button></p>                              </td>
+            <td style="vertical-align: top;padding-top: 2px;"> <input type="text" name="repeat" value="1" id="repeat" style="width: 45px;"> </td>
+            <td style="vertical-align: top;padding-top: 2px;"> <input type="text" name="wait" value="10" id="wait" style="width: 45px;">    </td>
+            <td> <p id="status">idle</p>                                                      </td>
+            <!-- Basic Chip -->
+            <td style="padding-left: 50px;"><span class="mdl-chip" style="background-color: #2196F3" align="right">
+                <span class="mdl-chip__text"> <p id="fitness" style="padding-left: 0;"></p> </span>
+            </span></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+    <table class="noborder">
+      <tr>
+        <td> <p> Primary (child) Network: <div id="childName"></div> <div id="fitness2"></div> </p> </td>
+        <td> <p> Parent Network A: <div id="parentA"></div> <div id="fitnessA"></div> </p>          </td>
+        <td> <p> Parent Network B: <div id="parentB"></div> <div id="fitnessB"></div> </p>          </td>
+        <td> <p> Species: <div id="species"></div> </p>                                             </td>
+      </tr>
+      <tr>
+        <td> <div id="neuronTable"></div>    </td>
+        <td> <div id="neuronTableA"></div>   </td>
+        <td> <div id="neuronTableB"></div>   </td>
+      </tr>
+    </table>
+
+    <canvas id="myChart"></canvas>
+    <h1 id="title"> OFFLINE </h1> -->
+
+    #neuron2{
+      color: green;
+    }
+
+    .demo-card-square.mdl-card {
+      width: 610px;
+      height: 60px;
+      min-height: 10px !important;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff;
+      background:
+        url('https://getmdl.io/assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+    }
+
+    body {
+      padding: 20px;
+      background: #fafafa;
+      position: relative;
+    }
+
+    .circleRed {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: red;
+    }
+
+    .circleGreen {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: green;
+    }
+
+    .circleBlue {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: blue;
+    }
+
+    .circleGrey {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: grey;
+    }
+
+    .null {
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+    }
+
+    .triangleRed {
+      width: 0;
+    	height: 0;
+      border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+    	border-bottom: 20px solid red;
+    }
+
+    .triangleGreen {
+      width: 0;
+    	height: 0;
+      border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+    	border-bottom: 20px solid green;
+    }
+
+    .triangleBlue {
+      width: 0;
+    	height: 0;
+      border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+    	border-bottom: 20px solid blue;
+    }
+
+    .triangleGrey {
+      width: 0;
+    	height: 0;
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+    	border-bottom: 20px solid grey;
+    }
+
+    .squareRed {
+      width: 20;
+    	height: 20;
+      background-color: red;
+    }
+
+    .squareGreen {
+      width: 20;
+    	height: 20;
+      background-color: green;
+    }
+
+    body {
+      background-color:#25252C
+    }
+
+    p, h2, div {
+      color: white;
+      font-family: 'Quicksand', sans-serif !important;
+    }
+
+    #status, #fitness {
+      color: black !important;
+    }
+
+    h1 {
+      color: white;
+      font-family: 'Quicksand', sans-serif !important;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    button{
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: none;
+    }
+
+    .noborder, .noborder tr, .noborder th, .noborder td {
+        border: none;
+    }
+
+    #parent{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #child{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    }
+
+    #fitness, #isActive {
+      padding-left: 60px;
+    }
+
+    td {
+      border: 1px solid grey;
+    }
+
+    td {
+      color: white;
+      font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    }
+    /*
+    canvas {
+      width: 600px !important;
+      height: 150px !important;
+    }*/

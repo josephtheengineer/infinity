@@ -1,0 +1,21 @@
+{
+  "name": "infinityai",
+  "version": "0.1.0",
+  "description": "AI Overlord",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Iuzzolino",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "chart.js": "^2.7.1",
+    "electron": "^1.8.2",
+    "fs": "0.0.1-security",
+    "node-stopwatch": "0.0.1",
+    "right-align": "^0.1.3",
+    "winston": "^2.4.0"
+  }
+}

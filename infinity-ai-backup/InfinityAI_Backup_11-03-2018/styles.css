@@ -1,0 +1,83 @@
+#neuron2{
+  color: green;
+}
+
+.circleRed {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: red;
+}
+
+.circleGreen {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: green;
+}
+
+.circleBlue {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: blue;
+}
+
+.circleGrey {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: grey;
+}
+
+.null {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+body {
+  background-color:#25252C
+}
+
+p, h2 {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+button{
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td{
+
+}
+
+td {
+  border: 1px solid grey;
+}
+
+td {
+  color: white;
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
+canvas {
+  width: 600px !important;
+  height: 150px !important;
+}

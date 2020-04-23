@@ -1,0 +1,12 @@
+{
+  "name": "infinityai",
+  "version": "0.1.0",
+  "description": "AI Overlord",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Iuzzolino",
+  "license": "SEE LICENSE IN LICENSE.md"
+}

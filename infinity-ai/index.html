@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="Stylesheet" href="styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+  <body id="parent">
+    <div id="child">
+  <table class="noborder">
+    <tr>
+      <td><p><button onclick="refreshScreen()">Refresh</button></p></td>
+      <td><p><button onclick="rmain()">Start</button></p></td>
+      <td><p><button onclick="stop()">Stop</button></p></td>
+      <td><p><button onclick="saveNetwork()">Save</button></p></td>
+      <td><p><button onclick="reset()">Reset</button></p></td>
+      <td><p><button onclick="woah()">Done</button></p></td>
+      <td><p id="status">idle</p></td>
+      <!--<td><p id="systems"> || Some systems are offline </p></td>-->
+      <td><input type="text" name="fitnessOverride" value="" id="fitnessOverride" style="width: 45px;"></td>
+      <td><h2 id="fitness"></h2></td>
+    </tr>
+    <tr>
+      <td><p>Repeat: </p></td>
+      <td><input type="text" name="repeat" value="1" id="repeat" style="width: 45px;"></td>
+      <td><p>Wait: </p></td>
+      <td><input type="text" name="wait" value="10" id="wait" style="width: 45px;"></td>
+      <td></td>
+      <td></td>
+      <td><p id="isActive"></p></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><p id="pressedKey"></p></td>
+    </tr>
+  </table>
+  <table class="noborder">
+
+  </table>
+
+  <div class="squareRed"></div>
+  <div class="triangleRed"></div>
+
+  <p id="totalNeurons"></p>
+  <h2 id="isActive"></h2>
+  <!-- <h2>Neuron Data</h2>
+  <p>xIndex yIndex offload spark active | connection1 | connection2 |<p> -->
+
+    <div id="rawNeuronTable"></div>
+<table class="noborder">
+  <tr>
+    <td><p> Primary (child) Network: <div id="childName"></div> <div id="fitness2"></div> </p></td>
+    <td><p> Parent Network A: <div id="parentA"></div> <div id="fitnessA"></div> </p></td>
+    <td><p> Parent Network B: <div id="parentB"></div> <div id="fitnessB"></div> </p></td>
+  </tr>
+  <tr>
+    <td><div id="neuronTable"></div></td>
+    <td><div id="neuronTableA"></div></td>
+    <td><div id="neuronTableB"></div></td>
+  </tr>
+</table>
+
+  <div id="neuronTableC" style="padding:0; margin:0; border-collapse: collapse;"></div>
+
+  <table id="NeuronTable" class="noborder">
+  </table>
+
+  <canvas id="myChart"></canvas>
+  <h1 id="title"> OFFLINE </h1>
+</div>
+  </body>
+</html>

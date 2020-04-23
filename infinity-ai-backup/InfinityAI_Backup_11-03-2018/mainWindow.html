@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="Stylesheet" href="styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+  <body onload="main()">
+
+  <table>
+    <tr>
+      <td><p><button onclick="refreshScreen()">Refresh</button></p></td>
+      <td><p><button onclick="main()">Start</button></p></td>
+      <td><p><button onclick="saveNetwork()">Save</button></p></td>
+      <td><p><button onclick="reset()">Reset</button></p></td>
+    </tr>
+  </table>
+
+  <!-- <h2>Fitness Level </h2>--><h2 id="fitness"></h2>
+  <h2 id="isActive"></h2>
+  <!-- <h2>Neuron Data</h2>
+  <p>xIndex yIndex offload spark active | connection1 | connection2 |<p> -->
+
+    <div id="rawNeuronTable"></div>
+<table>
+  <tr>
+    <td><p> Primary (child) Network:  </p></td>
+    <td><p> Parent Network A:  </p></td>
+  </tr>
+  <tr>
+    <td><div id="neuronTable"></div></td>
+    <td><div id="neuronTableA"></div></td>
+  </tr>
+</table>
+
+  <table id="NeuronTable">
+  </table>
+
+  <canvas id="myChart"></canvas>
+
+  </body>
+</html>
