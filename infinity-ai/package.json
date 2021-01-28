@@ -13,7 +13,7 @@
     "chalk": "^2.3.2",
     "chart.js": "^2.7.2",
     "color-convert": "^1.9.1",
-    "electron": "^1.8.4",
+    "electron": "^9.4.0",
     "fs": "0.0.1-security",
     "google": "^2.1.0",
     "node-run-cmd": "^1.0.1",
