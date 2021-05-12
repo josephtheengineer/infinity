@@ -11,7 +11,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "chalk": "^2.3.2",
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.9.4",
     "discord.js": "^11.3.2",
     "electron": "^2.0.0",
     "materialize-css": "^1.0.0-beta",
